@@ -13,5 +13,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
+      - name: old node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
       - name: Run a one-line script
         run: echo "Hello, world!"
