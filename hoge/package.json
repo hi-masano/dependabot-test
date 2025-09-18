@@ -1,0 +1,17 @@
+{
+  "name": "hoge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "compression": "^1.0.0",
+    "date-fns": "^0.17.0",
+    "dotenv": "^1.0.0",
+    "eslint": "^5.0.0"
+  }
+}

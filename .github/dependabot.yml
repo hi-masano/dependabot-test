@@ -1,0 +1,52 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directories:
+      - "**/*"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+      time: "23:00"
+      timezone: "Asia/Tokyo"
+    labels:
+      - "test"
+    open-pull-requests-limit: 0
+    groups:
+      npm-combine:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pip"
+    directories:
+      - "**/*"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+      time: "23:00"
+      timezone: "Asia/Tokyo"
+    labels:
+      - "test"
+    open-pull-requests-limit: 0
+    groups:
+      pip-combine:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+  - package-ecosystem: "github-actions"
+    directories:
+      - "**/*"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+      time: "23:00"
+      timezone: "Asia/Tokyo"
+    labels:
+      - "test"
+    open-pull-requests-limit: 0
+    groups:
+      gha-combine:
+        applies-to: security-updates
+        patterns:
+          - "*"
