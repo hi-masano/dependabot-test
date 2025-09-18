@@ -3,11 +3,10 @@ updates:
   - package-ecosystem: "npm"
     directories:
       - "**/*"
+    # NOTE: schedule is syntactically required by Dependabot for a version-updates entry.
+    # Security updates ignore this schedule (they trigger on alerts). We keep a minimal schedule.
     schedule:
       interval: "weekly"
-      day: "thursday"
-      time: "23:00"
-      timezone: "Asia/Tokyo"
     labels:
       - "test"
     open-pull-requests-limit: 0
@@ -20,11 +19,9 @@ updates:
   - package-ecosystem: "pip"
     directories:
       - "**/*"
+    # Required schedule block (see note above)
     schedule:
       interval: "weekly"
-      day: "thursday"
-      time: "23:00"
-      timezone: "Asia/Tokyo"
     labels:
       - "test"
     open-pull-requests-limit: 0
@@ -37,11 +34,9 @@ updates:
   - package-ecosystem: "github-actions"
     directories:
       - "**/*"
+    # Required schedule block (see note above)
     schedule:
       interval: "weekly"
-      day: "thursday"
-      time: "23:00"
-      timezone: "Asia/Tokyo"
     labels:
       - "test"
     open-pull-requests-limit: 0
