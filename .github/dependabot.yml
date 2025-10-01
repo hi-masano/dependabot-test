@@ -30,3 +30,4 @@ updates:
     labels:
       - "test"
     open-pull-requests-limit: 0
+# hoge
