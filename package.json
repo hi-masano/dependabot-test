@@ -10,9 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@mui/material": "^5.0.0",
-    "aws-cdk": "^0.8.0",
-    "aws-sdk": "^1.0.0",
+    "aws-cdk": "^2.1029.4",
+    "aws-sdk": "^2.814.0",
     "jest": "^30.1.2",
-    "log4js": "^2.0.0"
+    "log4js": "^6.4.0"
   }
 }
